@@ -41,6 +41,8 @@ function HomePage() {
               Abercrombie & Fitch. My expertise lies in finding what people
               desire and then building it.
             </p>
+
+            
           </div>
         </div>
       </div>

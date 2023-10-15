@@ -9,29 +9,29 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <Popover className="relative bg-white">
+        <Popover className="relative bg-white sticky top-0">
         {({ open }) => (
           <>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6">
-              <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+            <div className="mx-auto px-4 sm:px-6">
+              <div className="flex justify-between items-center border-b-2 border-black py-6 md:justify-start md:space-x-10">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
-                  <Link to="/" className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
+                  <Link to="/" className="text-2xl text-gray-900 sm:text-3xl">
                     Jennifer Spriggs
                   </Link>
                 </div>
                 <div className="-mr-2 -my-2 md:hidden">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Open menu</span>
-                    <span>
+                    <span className="text-2xl text-gray-900 ">
                       Menu
                     </span>
                   </Popover.Button>
                 </div>
-                <Popover.Group as="nav" className="hidden md:flex space-x-10">
-                  <Link to="/about" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                <Popover.Group as="nav" className="hidden md:flex space-x-10 justify-center">
+                  <Link to="/about" className="text-2xl text-gray-900  hover:text-gray-900">
                     About
                   </Link>
-                  <Link to="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  <Link to="/contact" className="text-2xl text-gray-900  hover:text-gray-900">
                     Contact
                   </Link>
                 </Popover.Group>
@@ -69,13 +69,13 @@ const Navbar = () => {
                   <div className="px-2 pt-2 pb-3 space-y-1">
                     <Link
                       to="/about"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      className="block text-2xl text-gray-900  px-3 py-2 rounded-md hover:text-gray-900 hover:bg-gray-50"
                     >
                       About
                     </Link>
                     <Link
                       to="/contact"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      className="block text-2xl text-gray-900  px-3 py-2 rounded-md hover:text-gray-900 hover:bg-gray-50"
                     >
                       Contact
                     </Link>
